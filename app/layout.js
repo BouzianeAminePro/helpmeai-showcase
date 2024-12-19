@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
             </div>
           </nav>
         </div>
-        <main className="my-[30rem]">
+        <main className="my-[37rem]">
           {children}
         </main>
       </body>
