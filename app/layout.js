@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={`${dosis.className} antialiased`}>
         <div className="flex">
-          <nav className="fixed w-full px-4">
+          <nav className="fixed w-full px-4 top-1">
             <div className="flex flex-row">
               <div className="flex flex-none items-center justify-center h-[40px] w-[40px] rounded-lg">
                 <Link href="/" className="flex items-center gap-x-1">
