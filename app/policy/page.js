@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function Policy() {
     return (
-        <div className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-lg">
+        <div className="max-w-3xl mx-auto p-6 shadow-md rounded-lg">
             <h1 className="text-3xl font-bold mb-4">Privacy Policy for HelpMeAI</h1>
             <p className="text-gray-600 mb-4">Effective Date: 31/12/2024</p>
             <p className="mb-4">Welcome to HelpMeAI! Your privacy is important to us. This Privacy Policy outlines how we handle your data and protect your privacy when using our website and Chrome extension.</p>
@@ -37,8 +37,12 @@ export default function Policy() {
 
             <h2 className="text-2xl font-semibold mt-6 mb-2">8. Contact Us</h2>
             <p className="mb-4">If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
-            <p className="mb-4">Email: [Insert Contact Email]</p>
-            <p className="mb-4">Website: [Insert Website URL]</p>
+            <p className="mb-4">
+                Email: <a href="mailto:aminebouz84@gmail.com" className="text-blue-500">aminebouz84@gmail.com</a>
+            </p>
+            <p className="mb-4">
+                Website: <a href="https://helpmeai-s.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500">https://helpmeai-s.vercel.app/</a>
+            </p>
             <p className="mt-4">Thank you for choosing HelpMeAI. We are committed to providing a secure and private experience for all our users.</p>
         </div>
     )

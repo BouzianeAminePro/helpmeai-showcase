@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
             </div>
           </nav>
         </div>
-        <main className="my-[37rem]">
+        <main>
           {children}
         </main>
       </body>
