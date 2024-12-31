@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { Service } from "./_components/Service";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";

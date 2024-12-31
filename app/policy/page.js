@@ -1,5 +1,3 @@
-"use client";
-
 export const metadata = {
     title: "Helpmeai",
     description: "Helpmeai policy page.",
