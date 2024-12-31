@@ -1,6 +1,13 @@
+"use client";
+
 import Link from "next/link";
 import { Service } from "./_components/Service";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+
+export const metadata = {
+  title: "Helpmeai",
+  description: "Helpmeai is for your daily use opensource ai, Ollama only for now.",
+};
 
 export default function Home() {
   return (
@@ -57,6 +64,12 @@ export default function Home() {
           </Link>
           <Link target="_blank" href="https://github.com/BouzianeAminePro">
             <GitHubLogoIcon />
+          </Link>
+          <Link
+            href="/policy"
+            className="underline font-medium hover:text-yellow-600"
+          >
+            Privacy Policy
           </Link>
         </div>
       </div>

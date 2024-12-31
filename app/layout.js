@@ -1,3 +1,5 @@
+"use client";
+
 import { Dosis } from "next/font/google";
 import Head from "next/head";
 import Image from "next/image";
@@ -9,11 +11,6 @@ const dosis = Dosis({
   weight: "400",
   subsets: ["latin"],
 });
-
-export const metadata = {
-  title: "Helpmeai",
-  description: "Helpmeai is for your daily use opensource ai, Ollama only for now.",
-};
 
 export default function RootLayout({ children }) {
   return (

@@ -1,4 +1,11 @@
-export function Policy () {
+"use client";
+
+export const metadata = {
+    title: "Helpmeai",
+    description: "Helpmeai policy page.",
+};
+
+export default function Policy() {
     return (
         <div className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-lg">
             <h1 className="text-3xl font-bold mb-4">Privacy Policy for HelpMeAI</h1>
