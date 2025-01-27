@@ -34,6 +34,17 @@ export default function Home() {
           </Link>{" "}
           for optimal performance. This will unlock all features and ensure the best experience with our extension.
         </p>
+        <p className="text-yellow-700 text-sm md:text-base leading-relaxed">
+          Case prompt button doesn't work, you must configure the Ollama server and fix the 403 problem, please refer to the{" "}
+          <Link
+            href="https://github.com/ollama/ollama/blob/main/docs/faq.md#how-do-i-configure-ollama-server"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline font-medium hover:text-yellow-600"
+          >
+            documentation
+          </Link>. After adding the necessary environment variables, make sure to reload Ollama for the changes to take effect.
+        </p>
       </div>
       <div className="mt-[7rem]">
         <Service
