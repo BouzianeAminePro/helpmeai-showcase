@@ -17,6 +17,14 @@ export default function Home() {
         <blockquote className="mt-6 border-l-2 md:pl-6 p-3 italic">
           Get instant AI assistance for tasks like text correction, idea prompting, and quick suggestions—right from your browser.
         </blockquote>
+        <Link
+          href={process.env.EXTENSION_URL || "#"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center justify-center px-6 py-3 text-base font-medium text-black bg-white border border-transparent rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors duration-200"
+        >
+          Download Extension
+        </Link>
       </div>
       <div className="mt-[7rem] w-full max-w-3xl p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-yellow-800 mb-2">
@@ -25,7 +33,7 @@ export default function Home() {
         <p className="text-yellow-700 text-sm md:text-base leading-relaxed">
           Please ensure you have set up{" "}
           <Link
-            href="https://ollama.com"
+            href={process.env.OLLAMA_URL || "#"}
             target="_blank"
             rel="noopener noreferrer"
             className="underline font-medium hover:text-yellow-600"
@@ -37,7 +45,7 @@ export default function Home() {
         <p className="text-yellow-700 text-sm md:text-base leading-relaxed">
           Case prompt button doesn't work, you must configure the Ollama server and fix the 403 problem, please refer to the{" "}
           <Link
-            href="https://github.com/ollama/ollama/blob/main/docs/faq.md#how-do-i-configure-ollama-server"
+            href={process.env.OLLAMA_CONFIG_URL || "#"}
             target="_blank"
             rel="noopener noreferrer"
             className="underline font-medium hover:text-yellow-600"
@@ -67,11 +75,14 @@ export default function Home() {
         <div className="flex items-center gap-x-2">
           <Link
             target="_blank"
-            href="https://www.linkedin.com/in/amine-bouziane-747790127"
+            href={process.env.LINKEDIN_PROFILE_URL || "#"}
           >
             <LinkedInLogoIcon />
           </Link>
-          <Link target="_blank" href="https://github.com/BouzianeAminePro">
+          <Link
+            target="_blank"
+            href={process.env.GITHUB_PROFILE_URL || "#"}
+          >
             <GitHubLogoIcon />
           </Link>
           <Link
