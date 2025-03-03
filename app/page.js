@@ -93,6 +93,15 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <Link
+        href={process.env.CANNY_FEATURE_REQUEST_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-canny-link
+        className="fixed right-0 top-1/2 -translate-y-1/2 inline-flex items-center justify-center px-2 py-3 text-sm font-medium text-yellow-800 bg-yellow-100 border border-yellow-400 rounded-l-md shadow-lg hover:bg-yellow-200 hover:text-yellow-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-200 z-50 [writing-mode:vertical-lr]"
+      >
+        Feedback
+      </Link>
     </div>
   );
 }
