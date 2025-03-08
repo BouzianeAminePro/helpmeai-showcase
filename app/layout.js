@@ -38,7 +38,9 @@ export default function RootLayout({ children }) {
           </nav>
         </div>
         <main>
-          {children}
+          <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg">
+            {children}
+          </div>
         </main>
       </body>
     </html>

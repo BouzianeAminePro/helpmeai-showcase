@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Service } from "./_components/Service";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { ShinyButton } from "./_components/magicui/shiny-button";
+import { Usage } from "./_components/Usage";
 
 export const metadata = {
   title: "Helpmeai",
@@ -9,9 +11,9 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="h-[83.2vh] w-full flex flex-col items-center justify-center my-[37rem]">
-      <div className="h-[25vh] flex flex-col items-center text-center">
-        <h1 className="scroll-m-20 text-xl md:text-3xl font-extrabold tracking-tight w-[25ch]">
+    <div className="h-[83.2vh] w-full flex flex-col items-center justify-center my-[55rem]">
+      <div className="h-[25vh] flex flex-col items-center text-center gap-y-4">
+        <h1 className="scroll-m-20 text-xl md:text-4xl font-extrabold tracking-tight w-[25ch]">
           Helpmeai your Chrome Extension for Daily AI-Powered Productivity
         </h1>
         <blockquote className="mt-6 border-l-2 md:pl-6 p-3 italic">
@@ -21,12 +23,19 @@ export default function Home() {
           href={process.env.EXTENSION_URL || "#"}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-flex items-center justify-center px-6 py-3 text-base font-medium text-black bg-white border border-transparent rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors duration-200"
         >
-          Download Extension
+          <ShinyButton>
+            Download Extension
+          </ShinyButton>
         </Link>
       </div>
-      <div className="mt-[7rem] w-full max-w-3xl p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-lg shadow-lg">
+      <div className="mt-[7rem] w-full max-w-3xl flex flex-col items-center justify-center">
+        <h2 className="scroll-m-20 text-xl md:text-3xl font-extrabold tracking-tight">
+          Trusted by people at the following institutions
+        </h2>
+        <Usage />
+      </div>
+      <div className="w-full max-w-3xl p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-yellow-800 mb-2">
           Important Notice:
         </h2>
@@ -57,12 +66,12 @@ export default function Home() {
       <div className="mt-[7rem]">
         <Service
           title="How it works ?"
-          video="/service2.mov"
+          video="/service1.mov"
           descriptionHeader="Promptify"
-          descriptionBody="Promptify takes your text and transforms it into effective prompts for various AI applications."
+          descriptionBody="Promptify takes your custom prompt and transforms it into effective prompt for various AI applications."
         />
         <Service
-          video="/service1.mov"
+          video="/service2.mov"
           descriptionHeader="Copy/Insert"
           descriptionBody="Easily copy and insert your text into any application, streamlining your workflow and enhancing productivity with just a click."
           reverse={true}
