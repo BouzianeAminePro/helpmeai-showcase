@@ -12,7 +12,7 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <div className="h-[25vh] flex flex-col items-center text-center gap-y-4">
+      <div className="flex flex-col items-center text-center gap-y-4">
         <h1 className="scroll-m-20 text-xl md:text-4xl font-extrabold tracking-tight w-[25ch]">
           Helpmeai your Chrome Extension for Daily AI-Powered Productivity
         </h1>
@@ -29,7 +29,7 @@ export default function Home() {
           </ShinyButton>
         </Link>
       </div>
-      <div className="mt-[7rem] w-full max-w-3xl flex flex-col items-center justify-center">
+      <div className="mt-[3rem] w-full max-w-3xl flex flex-col items-center justify-center">
         <h2 className="scroll-m-20 text-xl md:text-3xl font-extrabold tracking-tight">
           Trusted by people at the following institutions
         </h2>
@@ -77,11 +77,11 @@ export default function Home() {
           reverse={true}
         />
       </div>
-      <div className="flex flex-col-reverse md:flex-row items-center justify-around w-full h-[5rem] border-slate-400/10 border-t py-3 gap-y-2">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-around w-full h-[5rem] border-slate-400/10 border-t py-2 gap-y-1">
         <h4 className="scroll-m-20 text-sm font-semibold tracking-tight">
           @2024 Kabla labs. All rights reserved
         </h4>
-        <div className="flex flex-col-reverse md:flex-row items-center gap-3">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-2">
           <div className="flex flex-row gap-x-2">
             <Link
               target="_blank"
