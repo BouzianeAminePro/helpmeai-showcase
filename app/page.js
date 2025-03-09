@@ -63,7 +63,7 @@ export default function Home() {
           </Link>. After adding the necessary environment variables, make sure to reload Ollama for the changes to take effect.
         </p>
       </div>
-      <div className="mt-[7rem]">
+      <div>
         <Service
           title="How it works ?"
           video="/service1.mov"
@@ -77,26 +77,28 @@ export default function Home() {
           reverse={true}
         />
       </div>
-      <div className="mt-[7rem] flex items-center justify-around w-full h-[5rem]">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-around w-full h-[5rem] border-slate-400/10 border-t py-3 gap-y-2">
         <h4 className="scroll-m-20 text-sm font-semibold tracking-tight">
           @2024 Kabla labs. All rights reserved
         </h4>
-        <div className="flex items-center gap-x-2">
-          <Link
-            target="_blank"
-            href={process.env.LINKEDIN_PROFILE_URL || "#"}
-          >
-            <LinkedInLogoIcon />
-          </Link>
-          <Link
-            target="_blank"
-            href={process.env.GITHUB_PROFILE_URL || "#"}
-          >
-            <GitHubLogoIcon />
-          </Link>
+        <div className="flex flex-col-reverse md:flex-row items-center gap-3">
+          <div className="flex flex-row gap-x-2">
+            <Link
+              target="_blank"
+              href={process.env.LINKEDIN_PROFILE_URL || "#"}
+            >
+              <LinkedInLogoIcon />
+            </Link>
+            <Link
+              target="_blank"
+              href={process.env.GITHUB_PROFILE_URL || "#"}
+            >
+              <GitHubLogoIcon />
+            </Link>
+          </div>
           <Link
             href="/policy"
-            className="underline font-medium hover:text-yellow-600"
+            className="font-medium hover:text-slate-600"
           >
             Privacy Policy
           </Link>
