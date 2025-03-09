@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="h-[83.2vh] w-full flex flex-col items-center justify-center my-[55rem]">
+    <div className="w-full flex flex-col items-center justify-center">
       <div className="h-[25vh] flex flex-col items-center text-center gap-y-4">
         <h1 className="scroll-m-20 text-xl md:text-4xl font-extrabold tracking-tight w-[25ch]">
           Helpmeai your Chrome Extension for Daily AI-Powered Productivity

@@ -18,30 +18,32 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="/logo.ico" />
       </Head>
-      <body className={`${dosis.className} antialiased`}>
-        <div className="flex">
-          <nav className="fixed w-full px-4 top-1">
-            <div className="flex flex-row">
-              <div className="flex flex-none items-center justify-center h-[40px] w-[40px] rounded-lg">
-                <Link href="/" className="flex items-center gap-x-1">
-                  <Image
-                    src="/logo.png"
-                    alt="logo"
-                    width={40}
-                    height={40}
-                    priority={false}
-                    className="dark:invert"
-                  />
-                </Link>
-              </div>
+      <body className={`${dosis.className} antialiased h-screen`}>
+        <div className="relative overflow-hidden">
+          <main>
+            <header className="sticky top-0 left-2 z-50 w-full">
+              <nav className="mx-auto flex h-24 max-w-7xl gap-x-6 p-6 lg:px-8">
+                <div className="flex flex-row">
+                  <div className="flex flex-none items-center justify-center h-[40px] w-[40px] rounded-lg">
+                    <Link href="/" className="flex items-center gap-x-1">
+                      <Image
+                        src="/logo.png"
+                        alt="logo"
+                        width={40}
+                        height={40}
+                        priority={false}
+                        className="dark:invert"
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </nav>
+            </header>
+            <div className="mx-auto max-w-7xl pb-4 md:pb-0 lg:px-8">
+              {children}
             </div>
-          </nav>
+          </main>
         </div>
-        <main>
-          <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg">
-            {children}
-          </div>
-        </main>
       </body>
     </html>
   );

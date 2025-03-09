@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function Policy() {
     return (
-        <div className="max-w-3xl mx-auto p-6 shadow-md rounded-lg">
+        <div className="max-w-3xl mx-auto p-6">
             <h1 className="text-3xl font-bold mb-4">Privacy Policy for HelpMeAI</h1>
             <p className="text-gray-600 mb-4">Effective Date: 31/12/2024</p>
             <p className="mb-4">Welcome to HelpMeAI! Your privacy is important to us. This Privacy Policy outlines how we handle your data and protect your privacy when using our website and Chrome extension.</p>
