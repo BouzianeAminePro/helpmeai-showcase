@@ -71,10 +71,15 @@ export default function Home() {
           descriptionBody="Promptify takes your custom prompt and transforms it into effective prompt for various AI applications."
         />
         <Service
+          video="/service3.mov"
+          descriptionHeader="Selection prompting"
+          descriptionBody="Select a section on the page, then describe your task — our AI does the rest."
+          reverse={true}
+        />
+        <Service
           video="/service2.mov"
           descriptionHeader="Copy/Insert"
           descriptionBody="Easily copy and insert your text into any application, streamlining your workflow and enhancing productivity with just a click."
-          reverse={true}
         />
       </div>
       <div className="flex flex-col-reverse md:flex-row items-center justify-around w-full h-[5rem] border-slate-400/10 border-t py-2 gap-y-1">
